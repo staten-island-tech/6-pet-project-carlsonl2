@@ -18,11 +18,12 @@ Shop = [
 { "name" : "Ice Sword", "attack" : 50},
 { "name" : "Fire Sword", "attack" : 60}
 ]
-for index, item in enumerate(Shop):
-    Jordan.buy(Shop[1])
-print(Jordan.__dict__)
 
+Jordan.buy(Shop[2])
+
+Jordan.buy(Shop[0])
         
+print(Jordan.__dict__)      
         
 
 
