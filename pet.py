@@ -15,5 +15,5 @@ while Living == True:
     Options = input("What would you like to do? 1.Play")
     if Options.lower() == "play":
         Name.play(10)
-        print(Name.show(Name))
+        print(Name.show())
                                                                                                                                                        
