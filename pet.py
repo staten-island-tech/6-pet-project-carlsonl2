@@ -9,10 +9,10 @@ class Pet:
     def feed(self, value):
         self.hunger += value
     def show(self):
-        print(f"{self.name}, happiness:{self.happiness}")
+        print(f"{self.name}, happiness:{self.happiness}, hunger:{self.hunger}")
 
 Name = input("What would you like to name your pet?")
-Name = Pet(f"{Name}", 100)
+Name = Pet(f"{Name}", 100, 50)
 
 food_list = ["Dogfood", "Meat"]
 
@@ -23,4 +23,10 @@ while Living == True:
         Name.play(10)
         Name.show()
     if Options.lower() == "feed":   
-        Food = input(f"What would You like to feed him? {food_list}")                                                                                                                          
+        Food = input(f"What would You like to feed him? {food_list}")
+        if Food == "Dogfood":
+            Name.feed(20)
+        if Food == "Meat":
+            Name.feed(30)
+            Name.show()
+                                              
