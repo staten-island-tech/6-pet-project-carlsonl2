@@ -14,7 +14,7 @@ class Pet:
 Name = input("What would you like to name your pet?")
 Name = Pet(f"{Name}", 100, 50)
 
-foods = ["dogfood", "meat"]
+
 
 Living = True
 while Living == True:
@@ -23,11 +23,12 @@ while Living == True:
         Name.play(10)
         Name.show()
     if Options.lower() == "feed":
+        foods = ["dogfood", "meat"]
         for i in foods:
             Food = input(f"What would you like to feed your pet. {foods}")
             if Food.lower() == 'dogfood':
                 Name.feed(20)
             if Food.lower == 'meat':
                 Name.feed(30)
-                Name.show()
+            Name.show()
                                               
