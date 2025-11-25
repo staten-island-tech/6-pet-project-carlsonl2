@@ -22,13 +22,12 @@ while Living == True:
     if Options.lower() == "play":
         Name.play(10)
         Name.show()
-    if Options.lower() == "feed":
+    elif Options.lower() == "feed":
         foods = ["dogfood", "meat"]
-        for i in foods:
-            Food = input(f"What would you like to feed your pet. {foods}")
-            if Food.lower() == 'dogfood':
-                Name.feed(20)
-            if Food.lower == 'meat':
-                Name.feed(30)
+        Food = input(f"What would you like to feed your pet. {foods}")
+        if Food.lower() == 'dogfood':
+            Name.feed(20)
+        if Food.lower == 'meat':
+            Name.feed(30)
             Name.show()
                                               
