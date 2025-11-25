@@ -24,7 +24,7 @@ class Pet:
 
 Name = input("What would you like to name your pet?")
 Name = Pet(f"{Name}", 100, 50)
-
+Name.show()
 
 
 
