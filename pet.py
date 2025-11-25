@@ -1,5 +1,5 @@
 class Pet:
-    def __init__(self, name, happiness, hunger, alive):
+    def __init__(self, name, happiness, hunger):
         self.name = name
         self.happiness = happiness
         self.hunger = hunger
