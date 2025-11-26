@@ -4,11 +4,11 @@ class Pet:
         self.happiness = happiness
         self.hunger = hunger
         self.alive = alive
-    def play(self, value):
-        self.happiness += value
+    def play(self):
+        self.happiness += 10
         print(f"happiness has increased to {self.happiness}")
-    def feed(self, value):
-        self.hunger += value
+    def feed(self):
+        self.hunger += 10
         print(f"Your pets hunger increased to {self.hunger}")
         if self.hunger < 25:
             print("Your pet is hungry feed him soon!")
@@ -28,11 +28,11 @@ while Name.alive == True:
                 "2: Check Stats \n"
                 "3: Feed")
     if hungry.lower() == "play":
-        Name.happiness(10)
+        Name.happiness()
     elif hungry.lower() == "check stats":
         Name.show()
     elif hungry.lower() == "feed":
-        Name.feed(10)
+        Name.feed()
                 
 
 
