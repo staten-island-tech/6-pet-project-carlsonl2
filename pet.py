@@ -33,7 +33,8 @@ while Name.alive == True:
         Name.show()
     elif hungry.lower() == "feed":
         Name.feed()
-    else: print("thats not an option")
+    else: 
+        print("thats not an option")
                 
 
 
