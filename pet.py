@@ -22,10 +22,10 @@ class Pet:
 Name = input("What would you like to name your pet?")
 Name = Pet(f"{Name}", 100, 50, True)
 Name.show()
-while Name.life == True:
-    hungry = input("Here are the thibngs you can do with your pet."
-                   "1: Check Stats" \
-                   "2: Feed" \
+while Name.alive == True:
+    hungry = input("Here are the thibngs you can do with your pet./n"
+                   "1: Check Stats/n"
+                   "2: Feed/n"
                    "3: Play")
                    
                 
