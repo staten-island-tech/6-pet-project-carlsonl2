@@ -27,6 +27,12 @@ while Name.alive == True:
                 "1: Play \n"
                 "2: Check Stats \n"
                 "3: Feed")
+    if hungry.lower() == "play":
+        Name.happiness(10)
+    elif hungry.lower() == "check stats":
+        Name.show()
+    elif hungry.lower() == "feed":
+        Name.feed(10)
                 
 
 
