@@ -28,11 +28,12 @@ while Name.alive == True:
                 "2: Check Stats \n"
                 "3: Feed")
     if hungry.lower() == "play":
-        Name.happiness()
+        Name.play()
     elif hungry.lower() == "check stats":
         Name.show()
     elif hungry.lower() == "feed":
         Name.feed()
+    else: print("thats not an option")
                 
 
 
