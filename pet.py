@@ -23,9 +23,9 @@ Name = input("What would you like to name your pet?")
 Name = Pet(f"{Name}", 100, 50, True)
 Name.show()
 while Name.alive == True:
-    hungry = input("Here are the things you can do." \
-                "1: Play" \
-                "2: Check Stats" \
+    hungry = input("Here are the things you can do. \n"
+                "1: Play \n"
+                "2: Check Stats \n"
                 "3: Feed")
                 
 
