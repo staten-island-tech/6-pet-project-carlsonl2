@@ -29,6 +29,8 @@ while Name.alive == True:
                 "3: Feed")
     if hungry.lower() == "play":
         Name.play()
+    elif "p" or "l" or "a" or "y" in hungry.lower():
+        print("Did you mean play?")
     elif hungry.lower() == "check stats":
         Name.show()
     elif hungry.lower() == "feed":
