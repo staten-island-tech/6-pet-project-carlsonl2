@@ -34,6 +34,7 @@ while Name.alive == True:
     if hungry.lower() == "feed":
         Name.feed()
     if hungry.lower() != "feed" or "play" or "check stats":
+        
         if "p" and "l" and "a" and "y" in hungry.lower():
             typo_1 = input("Did you mean play?")
             if typo_1.lower() == "yes":
@@ -46,8 +47,7 @@ while Name.alive == True:
             typo_3 = input("Did you mean feed?")
             if typo_3.lower() == "yes":
                 Name.feed()
-        else:
-            "that is not an option"
+        
             
                 
 
