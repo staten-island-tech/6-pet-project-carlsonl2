@@ -33,7 +33,7 @@ while Name.alive == True:
         Name.show()
     if hungry.lower() == "feed":
         Name.feed()
-    else:
+    if hungry.lower() != "feed" or "play" or "check stats":
         if "p" and "l" and "a" and "y" in hungry.lower():
             typo_1 = input("Did you mean play?")
             if typo_1.lower() == "yes":
