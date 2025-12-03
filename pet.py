@@ -34,7 +34,7 @@ while Name.alive == True:
     if hungry.lower() == "feed":
         Name.feed()
     else: 
-        if "p" or "l" or "a" or "y" in hungry.lower():
+        if "p" and "l" and "a" and "y" in hungry.lower():
             print("Did you mean play?")
                 
 
