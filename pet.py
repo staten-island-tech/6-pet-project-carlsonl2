@@ -35,7 +35,9 @@ while Name.alive == True:
         Name.feed()
     else: 
         if "p" and "l" and "a" and "y" in hungry.lower():
-            print("Did you mean play?")
+            typo_1 = input("Did you mean play?")
+            if typo_1 == "yes":
+                Name.play()
                 
 
 
