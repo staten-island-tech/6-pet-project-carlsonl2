@@ -29,24 +29,25 @@ while Name.alive == True:
                 "3: Feed")
     if hungry.lower() == "play":
         Name.play()
-    if hungry.lower() == "check stats":
+    elif hungry.lower() == "check stats":
         Name.show()
-    if hungry.lower() == "feed":
+    elif hungry.lower() == "feed":
         Name.feed()
-    if hungry.lower() != "feed" or "play" or "check stats":
-        
+    elif hungry.lower() != "feed" or "play" or "check stats":
         if "p" and "l" and "a" and "y" in hungry.lower():
             typo_1 = input("Did you mean play?")
             if typo_1.lower() == "yes":
                 Name.play()
         elif "c" and "h" and "e" and "k" and "s" and "t" and "a" in hungry.lower():
-            typo_2 = input("Did you want to Check Stats?")
+            typo_2 = input("Did you mean Check Stats?")
             if typo_2.lower() == "yes":
                 Name.show()
         elif "f" and "e" and "d" in hungry.lower():
             typo_3 = input("Did you mean feed?")
             if typo_3.lower() == "yes":
                 Name.feed()
+        else:
+            print("Not an option")
         
             
                 
