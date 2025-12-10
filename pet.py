@@ -35,8 +35,7 @@ while Name.alive == True:
     if hungry.lower() == "feed":
         Name.feed(10)
     else:
-        print("not an option")
-            
+        print("Not an option")   
                 
 
 
