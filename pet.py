@@ -1,9 +1,9 @@
 class Pet:
-    def __init__(self, name, happiness, hunger, alive):
+    def __init__(self, name, happiness, hunger):
         self.name = name
         self.happiness = happiness
         self.hunger = hunger
-        self.alive = alive
+       
     def play(self):
         self.happiness += 10
         print(f"happiness has increased to {self.happiness}")
@@ -13,7 +13,8 @@ class Pet:
         if self.hunger < 25:
             print("Your pet is hungry feed him soon!")
         elif self.hunger > 150:
-             print("Your pet is very full, stop feeding him!")
+            print("Your pet is very full, stop feeding him!")
+    
         
     def show(self):
         print(f"{self.name}, happiness:{self.happiness}, hunger:{self.hunger}")
@@ -29,26 +30,12 @@ while Name.alive == True:
                 "3: Feed")
     if hungry.lower() == "play":
         Name.play()
-    elif hungry.lower() == "check stats":
+    elif hungry.lower() == "check stats" or "check":
         Name.show()
     elif hungry.lower() == "feed":
         Name.feed()
-    elif hungry.lower() != "feed" or "play" or "check stats":
-        if "p" and "l" and "a" and "y" in hungry.lower():
-            typo_1 = input("Did you mean play?")
-            if typo_1.lower() == "yes":
-                Name.play()
-        elif "c" and "h" and "e" and "k" and "s" and "t" and "a" in hungry.lower():
-            typo_2 = input("Did you mean Check Stats?")
-            if typo_2.lower() == "yes":
-                Name.show()
-        elif "f" and "e" and "d" in hungry.lower():
-            typo_3 = input("Did you mean feed?")
-            if typo_3.lower() == "yes":
-                Name.feed()
-        else:
-            print("Not an option")
-        
+    else:
+        print("not an option")
             
                 
 
