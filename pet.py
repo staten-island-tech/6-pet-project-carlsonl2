@@ -30,7 +30,7 @@ while Name.alive == True:
                 "3: Feed")
     if hungry.lower() == "play":
         Name.play(10)
-    if hungry.lower() == "check stats" or "check":
+    if hungry.lower() == "check stats":
         Name.show()
     if hungry.lower() == "feed":
         Name.feed(10)
